@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<script>
+    // if statement
+    document.write("<h1>if statement</h1>")
+    let age = 65;
+    if(age>18){
+        document.write("the person is an adult");
+    }
+    // if-else statement
+    document.write("<h1>if-else satement</h1>")
+    let age1 = 12;
+    if(age1>18){
+        document.write("the person is an adult");
+    }
+    else{
+        document.write("The person is a minor")
+    }
+    //if-else-if statement
+    document.write("<h1>if-else-if statement</h1>")
+    let marks = 95;
+    if(marks>70){
+        document.write("1st division");
+    }
+    else if(marks>=40 && marks<=70){
+        document.write("2nd division")
+    }
+    else{
+        document.write("fail division")
+    }
+    //switch-case statement
+    document.write("<h1>Switch case statement</h1>")
+    let a=2;
+    switch(a){
+        case 1:
+            document.write("Case 1 is executed");
+            break;
+        case 2:
+            document.write("Case 2 is executed");
+            break;  
+        case 3:
+            document.write("Case 3 is executed");
+            break;  
+        case 4:
+            document.write("Case 4 is executed");
+            break;
+       
+    }
+let num1=25;
+let num2=24;
+let op="#";
+switch(op){
+    case "+":
+        document.write("The addition is "+ (num1+num2));
+        break;
+    case "-":
+        document.write("The difference is "+ (num1-num2));
+        break;
+    case "/":
+        document.write("The division is "+ (num1/num2));
+         break;
+    case "*":
+        document.write("The product is "+ (num1*num2));
+        break;
+    default:
+        document.write("Operator not matched");
+    break;
+}
+// for loop statement
+document.write("<h1>for loop statement</h1>")
+for(let i=1; i<=10; i++){
+document.write(i+"<br>");
+}
+
+// // while statement
+document.write("<h1>while statement</h1>")
+let j = 1;
+while(j<=10){
+document.write(j+"<br>");
+j++;
+}
+// scope of variable
+if(9>8){
+var score = 99;
+let score1 = 99;
+const score2 = 99;
+}
+console.log(score); // No error
+console.log(score1); //Error
+console.log(score2); //Error
+
+//hosting
+x = 8;
+console.log(x);
+var x;
+//function hoisting
+console.log(x);
+var x=5;
+console.log(x)
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    #txt{
+        width: 200px;
+    }
+</style>
+</head>
+<body>
+    <div onclick="counting()">
+        <img src="legion_game_shop.jpg" height="120" width="120">
+        </div>
+    </div><br>
+    <input type="text" onselect="key()" id="txt">
+<script>
+    let count=0;
+    function counting(){
+        count++;
+        console.log(count);
+    }
+    function key(){
+        alert("keyboard event occured")
+        document.getElementByTd("txt").style.
+        backgroundColor="pink";
+    }
+</script>
+</body>
+</html>

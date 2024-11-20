@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+.container{
+    background-color: black;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    gap: 1rem;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+            
+ }
+
+   
+@media (min-width:758px){
+    .container{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer{
+        height: 60px;
+    }   
+    .header,.footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+         
+    }
+    .box1{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        
+    }
+
+    .box3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+           
+    }
+
+}
+
+.item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1r em;
+            color: white;
+            background-color: rgb(57, 50, 50);
+            border: 5px solid yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <main class="container">
+        <div class="item header">Header</div>
+        <div class="item box1">Sidebar</div>
+        <div class="item box3">3</div>
+        <div class="item box">4</div>
+        <div class="item box">5</div>
+        <div class="item footer">Footer</div>
+
+        
+    </main>
+</body>
+</html>

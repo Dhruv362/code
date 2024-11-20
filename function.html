@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // function scope
+            document.write("<h1>Function scope</h4>")
+            function add(){
+                let n = 6;
+                function sq(){
+                    return n*n;
+                }
+            }
+            return sq()
+            document.write(add());
+
+
+        </script>
+    </head>
+</html>
